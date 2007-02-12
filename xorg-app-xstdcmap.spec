@@ -1,5 +1,5 @@
 Summary:	xstdcmap application
-Summary(pl):	Aplikacja xstdcmap
+Summary(pl.UTF-8):   Aplikacja xstdcmap
 Name:		xorg-app-xstdcmap
 Version:	1.0.1
 Release:	1
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 xstdcmap application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja xstdcmap.
 
 %prep
