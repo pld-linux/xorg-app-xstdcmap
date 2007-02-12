@@ -1,5 +1,5 @@
 Summary:	xstdcmap application
-Summary(pl.UTF-8):   Aplikacja xstdcmap
+Summary(pl.UTF-8):	Aplikacja xstdcmap
 Name:		xorg-app-xstdcmap
 Version:	1.0.1
 Release:	1
