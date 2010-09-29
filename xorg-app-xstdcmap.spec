@@ -1,25 +1,34 @@
-Summary:	xstdcmap application
-Summary(pl.UTF-8):	Aplikacja xstdcmap
+Summary:	xstdcmap application - X standard colormap utility
+Summary(pl.UTF-8):	Aplikacja xstdcmap - narzędzie do standardowej palety kolorów X
 Name:		xorg-app-xstdcmap
-Version:	1.0.1
-Release:	2
+Version:	1.0.2
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xstdcmap-%{version}.tar.bz2
-# Source0-md5:	86ab558441edfb86f853639e4290a754
+# Source0-md5:	ee97f0cbb80e321c914dc7bc5d49960a
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libXmu-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.2
+BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-xstdcmap application.
+The xstdcmap utility can be used to selectively define standard
+colormap properties. It is intended to be run from a user's X startup
+script to create standard colormap definitions in order to facilitate
+sharing of scarce colormap resources among clients using PseudoColor
+visuals.
 
 %description -l pl.UTF-8
-Aplikacja xstdcmap.
+Narzędzie xstdcmap służy do wybiórczego definiowania standardowych
+właściwości palet kolorów. Jest przeznaczone do uruchamiania ze
+skryptu startowego X użytkownika w celu stworzenia standardowych
+definicji palet kolorów w celu ułatwienia współdzielenia
+niewystarczającej liczby kolorów między klientami na ekranach
+PseudoColor.
 
 %prep
 %setup -q -n xstdcmap-%{version}
@@ -44,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog README
 %attr(755,root,root) %{_bindir}/xstdcmap
 %{_mandir}/man1/xstdcmap.1x*
