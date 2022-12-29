@@ -1,20 +1,22 @@
 Summary:	xstdcmap application - X standard colormap utility
 Summary(pl.UTF-8):	Aplikacja xstdcmap - narzędzie do standardowej palety kolorów X
 Name:		xorg-app-xstdcmap
-Version:	1.0.4
+Version:	1.0.5
 Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	https://xorg.freedesktop.org/releases/individual/app/xstdcmap-%{version}.tar.bz2
-# Source0-md5:	da67142c128d18386ff145882e0afc66
+Source0:	https://xorg.freedesktop.org/releases/individual/app/xstdcmap-%{version}.tar.xz
+# Source0-md5:	86c9c5292a0810255cbd8767373b0f81
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXmu-devel
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.17
 BuildRequires:	xorg-util-util-macros >= 1.8
+BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
